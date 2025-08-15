@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sophia Bennett – Professional Photographer specializing in portraits, lifestyle, and events.">
+  <link href="./output.css" rel="stylesheet">
+  <title>
+    Sophia Bennett – Photographer Portfolio
+  </title>
+</head>
+<body class="bg-lightcream font-opensans min-h-screen flex flex-col">
+  <div class="relative w-full md:h-96">
+    <!-- background image -->
+    <img src="../img/image1.jpg" alt="background" class="absolute inset-0 w-full h-96 object-cover">
+    <div class="absolute inset-0 bg-black opacity-70 z-0 w-full h-96">
+    </div>
+    <!-- content -->
+    <div class="relative z-20 container mx-auto px-6 py-12">
+      <!-- Navbar -->
+      <nav class="relative mx-auto p-4 z-10 ">
+        <div class="pt-2 flex justify-between items-center">
+          <!-- logo -->
+          <div class="flex items-center gap-3">
+            <!-- logo image -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"class="size-16 fill-lightcream">
+              <path d="M12 9a3.75 3.75 0 1 0 0 7.5A3.75 3.75 0 0 0 12 9Z" />
+              <path fill-rule="evenodd" d="M9.344 3.071a49.52 49.52 0 0 1 5.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 0 0 1.11-.71l.822-1.315a2.942 2.942 0 0 1 2.332-1.39ZM6.75 12.75a5.25 5.25 0 1 1 10.5 0 5.25 5.25 0 0 1-10.5 0Zm12-1.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+            </svg>
+            <!-- logo text-->
+            <div>
+              <div class="text-3xl font-lobster text-lightcream leading-none">Capture</div>
+              <div class="text-sm text-lightcream tracking-widest">Every Moment</div>
+            </div>
+          </div>
+                  
+                  
+          <!-- menu (desktop) -->     
+          <div class="md:flex items-center space-x-6 ml-auto">
+            <ul class="hidden md:flex space-x-6 text-lightcream list-none space-y-0 mb-0">
+              <li><a href="#" class="hover:text-lightgreen">Home</a></li>
+              <li><a href="#" class="hover:text-lightgreen">About</a></li>
+              <li><a href="#" class="hover:text-lightgreen">Blog</a></li>
+              <li><a href="#" class="hover:text-lightgreen">Contact</a></li>
+            </ul>
+            <!-- button -->
+            <a href="#" class="hidden md:block p-4 px-6 text-lightcream baseline bg-darkgreen hover:bg-lightgreen rounded-full cursor-pointer ml-auto">Download my CV
+            </a>
+            <!-- mobile menu -->
+            <div class="mobile-menu">
+              <!-- Hamburger icon -->
+              <div>
+                <button class="hamburger md:hidden">
+                  <span class="hamburger-top"></span>
+                  <span class="hamburger-middle"></span>
+                  <span class="hamburger-bottom"></span>
+                </button>
+                <!-- mobile menu content -->
+                <div class="menu-content">
+                  <div id="menu" class="absolute flex flex-col items-center self-end py-8 space-y-6 font-bold text-lightcream sm:w-auto sm:self-center top-8  right-2 z-30">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- introduction -->
+      <div class="relative w-full -mt-14 md:-mt-24">
+        <!-- profie -->
+        <div class="absolute md:-top-1/2 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-10 w-48 md:w-72 aspect-square rounded-full overflow-hidden z-20">
+          <img src="../img/portrait.jpg" alt="portrait of Sophia Bennett." class="w-full h-full object-cover">
+        </div>
+        <!-- about me text -->
+        <section class="grid grid-cols-1 gap-[272px] mt-48 md:grid-cols-2 md:gap-24 md:mt-72">
+          <div></div> 
+          <div class="flex flex-col text-center md:items-start md:text-left">
+            <!-- title -->
+            <h1 class="text-lightgreen md:-mt-8 -mt-12 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold whitespace-nowrap overflow-x-auto font-montserrat">I'm Sophia Bennett.</h1>
+            <!-- paragraph -->
+            <p class="text-darkgreen mt-2 md:mt-10">
+            a photographer with a passion for telling authentic stories through light, color, and composition.
+            </p>
+          </div>
+        </section>
+      </div>
+      <!-- main -->
+      <main>
+        <div class="grid grid-cols-12 gap-6 lg:gap-6 mt-12 md:mt-36 lg:mt-[168px]">
+          <!-- About me -->
+          <div class="bg-verylightgreen text-darkgreen rounded-lg p-8 w-full lg:w-auto mx-auto shadow-lg col-span-12 lg:col-span-4 transform scale-95 hover:scale-100 transition duration-500">
+            <h2 class="pb-2 text-2xl mb-2 md:text-2xl font-bold font-montserrat text-darkgreen">About Me</h2>
+            <p>Sophia Bennett is a passionate photographer with a keen eye for capturing emotions and stories through her lens. She thrives on exploring urban landscapes, natural light portraits, and candid moments that often go unnoticed. Sophia combines creativity with technical skill to create images that feel authentic and timeless.</p>
+          </div>
+          <!-- skills -->
+          <div class="bg-verylightgreen text-darkgreen rounded-lg p-8 mx-auto w-full shadow-lg col-span-12 lg:col-span-8 transform scale-95 hover:scale-100 transition duration-500">
+            <h2 class="pb-2 text-2xl mb-2 md:text-2xl font-bold font-montserrat">Skills</h2>
+            <div class="flex flex-wrap -mx-2">
+              <!-- first column-->
+              <div class="w-full md:w-1/2 px-2 box-border break-words">
+                <h3 class="text-xl mb-2 mt-6">Photography Skills:</h3>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Portrait & Lifestyle Photography</li>
+                  <li>Event & Wedding Photography</li>
+                  <li>Landscape & Street Photography</li>
+                  <li>Commercial & Product Photography</li>
+                </ul>
+              </div>
+              <!-- secound column -->
+              <div class="w-full md:w-1/2 px-2 box-border break-words">
+                <h3 class="text-xl mb-2 mt-6">Technical Skills:</h3>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Adobe Lightroom & Photoshop</li>
+                  <li>Studio Lighting & Flash Photography</li>
+                  <li>Color Grading & Retouching</li>
+                  <li>Photo Editing & Workflow Optimization</li>
+                </ul>
+              </div>
+              <!-- Other Skills -->
+              <div class="w-full px-2 box-border break-words mt-8">
+                <h3 class="text-xl mb-2">Other Skills:</h3>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Creative Vision & Problem Solving</li>
+                  <li>Client Communication</li>
+                  <li>Project Management</li>
+                  <li>Attention to Detail</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- experience -->
+          <div class="bg-verylightgreen text-darkgreen rounded-lg p-8 mx-auto w-full col-span-12 lg:col-span-6 transform scale-95 hover:scale-100 transition duration-500">
+            <h2 class="pb-2 text-2xl mb-2 md:text-2xl font-bold font-montserrat">Experience</h2>
+            <h3 class="mt-4 text-xl mb-2">Freelance Photographer | 2020 – Present</h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Captured portraits, lifestyle sessions, and events for private clients</li>
+              <li>Collaborated with brands for commercial and product photography</li>
+              <li>Edited images professionally to maintain high-quality standards</li>
+            </ul>
+            <h3 class="text-xl mt-6 mb-2">Photography Assistant | Lumiere Studios | 2018 – 2020</h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Assisted in studio shoots and outdoor photography sessions</li>
+              <li>Managed lighting, equipment setup, and workflow</li>
+              <li>Edited and retouched images for client projects</li>
+            </ul>
+          </div>
+          <!-- education -->
+          <div class="bg-verylightgreen text-darkgreen rounded-lg p-8 mx-auto w-full col-span-12 lg:col-span-6 transform scale-95 hover:scale-100 transition duration-500">
+            <h2 class="pb-2 text-2xl mb-2 md:text-2xl font-bold font-montserrat">Education</h2>
+            <ul>
+              <li>Bachelor of Arts in Visual Arts – University of Arts, 2018</li>
+              <li>Advanced Photography Workshop – Creative Academy, 2019</li>
+              <li>Online Certification in Digital Photo Editing (Lightroom & Photoshop), 2020</li>
+            </ul>
+          </div>
+        </div>
+      </main> 
+    </div> 
+    <!-- footer -->
+    <div class="bg-darkgreen text-lightcream mt-16 flex flex-col items-center w-full">
+      <div class="container w-full justify-center max-w-[800px] flex flex-col items-center gap-6 mt-8 mb-8">
+        <!-- quick access -->
+        <div class="flex gap-6 mx-auto justify-center text-center w-full opacity-75">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <!-- social media accounts -->
+        <div class="flex flex-row gap-6 justify-center fill-lightcream w-full">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" class="w-6 h-6 opacity-75">
+              <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-6 h-6 opacity-75" viewBox="0 0 24 24">
+              <path d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"></path>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  class="w-6 h-6 opacity-75" viewBox="0 0 24 24">
+              <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"></path>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-6 h-6 opacity-75" viewBox="0 0 24 24">
+              <path d="M12,2C6.477,2,2,6.477,2,12c0,4.237,2.636,7.855,6.356,9.312c-0.087-0.791-0.167-2.005,0.035-2.868 c0.182-0.78,1.172-4.971,1.172-4.971s-0.299-0.599-0.299-1.484c0-1.391,0.806-2.428,1.809-2.428c0.853,0,1.265,0.641,1.265,1.408 c0,0.858-0.546,2.141-0.828,3.329c-0.236,0.996,0.499,1.807,1.481,1.807c1.777,0,3.143-1.874,3.143-4.579 c0-2.394-1.72-4.068-4.177-4.068c-2.845,0-4.515,2.134-4.515,4.34c0,0.859,0.331,1.781,0.744,2.282 c0.082,0.099,0.093,0.186,0.069,0.287c-0.076,0.316-0.244,0.995-0.277,1.134c-0.043,0.183-0.145,0.222-0.334,0.133 c-1.249-0.582-2.03-2.408-2.03-3.874c0-3.154,2.292-6.052,6.608-6.052c3.469,0,6.165,2.472,6.165,5.776 c0,3.447-2.173,6.22-5.189,6.22c-1.013,0-1.966-0.527-2.292-1.148c0,0-0.502,1.909-0.623,2.378 c-0.226,0.868-0.835,1.958-1.243,2.622C9.975,21.843,10.969,22,12,22c5.522,0,10-4.478,10-10S17.523,2,12,2z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="text-center text-sm mt-8">
+          &copy; 2025 My Website. All rights reserved.
+        </div>
+      </div>  
+    </div>  
+  </div>
+          
+</body>
+</html>

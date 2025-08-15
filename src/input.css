@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+
+
+@theme {
+    --color-darkgreen: #53573d;
+    --color-lightgreen: #8E9566FF;
+    --color-verylightgreen: #D7D9A3FF;
+    --color-lightcream: #fff8e0;
+    --font-lobster: "Lobster", sans-serif;
+    --font-opensans: "Open Sans", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+  }
+  @layer base {
+    h2 {
+      @apply text-3xl font-bold mb-4 text-darkgreen font-montserrat;
+    }
+    h3 {
+      @apply text-xl font-semibold mt-4 mb-2;
+    }
+    p {
+      @apply text-darkgreen mb-4;
+    }
+    ul {
+      @apply list-disc list-inside space-y-2 mb-4;
+    }
+  }
+
+
+/* Hamburger Base */
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #fff8e0;
+  transition: all 0.3s ease;
+}
+
+.hamburger-top {
+  top: 0;
+}
+.hamburger-middle {
+  top: 7px;
+}
+.hamburger-bottom {
+  top: 14px;
+}
+
+
+.menu-content {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 360ms ease-in 180ms;
+}
+/* Show menu on hover */
+.mobile-menu:hover .menu-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(12px);
+}
+
+
+/* Optional: animate hamburger icon on hover */
+.hamburger:hover .hamburger-top {
+  transform: rotate(45deg);
+  transition: all 360ms ease-in 80ms;
+  top: 7px;
+}
+.hamburger:hover .hamburger-middle {
+  transition: all 180ms ease-in 80ms;
+  opacity: 0;
+}
+.hamburger:hover .hamburger-bottom {
+  transition: all 360ms ease-in 80ms;
+  transform: rotate(-45deg);
+  top: 7px;
+}
